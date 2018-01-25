@@ -1,0 +1,1 @@
+find . -name *.log | xargs -I {} python avlogformatter.py {}

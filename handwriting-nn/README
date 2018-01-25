@@ -1,0 +1,5 @@
+Train:
+python handwriting-nn-relu.py --train --traindata=Train.dat --trainsize=6999 --evaldata=test.dat --evalsize=1095 --save=model.npz --logfile=train.log
+
+Evaluate:
+python handwriting-nn-relu.py --evaluate --load=model.npz --evaldata=test.dat --evalsize=1095

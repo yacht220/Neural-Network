@@ -1,0 +1,537 @@
+<logheader platform="Linux" env-locale-cs="ANSI_X3.4-1968" process_id="avtar" version="7.5.100-183" tz="PST" />
+
+--------------------------------------------------------------------------------------------------------
+-----  START avtar log 2017-11-16 00:45:59 PST  [7.5.100-183 Linux-x86_64]
+--------------------------------------------------------------------------------------------------------
+
+2017-11-16 00:45:59 avtar Info <5008>: Logging to /usr/local/avamar/var/clidev-isilon2-2-vm-griffin-6173/progress-MOD-1510821908238-1001-Unix_Progress.log
+2017-11-16 00:45:59 avtar Info <5174>: - Reading /root/.avamar
+2017-11-16 00:45:59 avtar Info <5174>: - Reading /usr/local/avamar/etc/usersettings.cfg
+2017-11-16 00:45:59 avtar Info <5174>: - Reading /usr/local/avamar/var/clidev-isilon2-2-vm-griffin-6173/avtar.cmd
+2017/11/16-08:45:59.96211 [avtar]  uflags::parsefile  Printing flags from /usr/local/avamar/var/clidev-isilon2-2-vm-griffin-6173/avtar.cmd:
+.cmd flag [1]: --debug=true
+.cmd flag [2]: --x02=6144
+
+2017/11/16-08:45:59.96214 [avtar]  Looking for flag file "/root/.avtar"
+2017/11/16-08:45:59.96216 [avtar]  client::check_for_workorder begin
+2017/11/16-08:45:59.96223 [avtar]  client::check_for_workorder no workorder file
+2017/11/16-08:45:59.96241 [avtar]  Using Intel implementation of SHA1
+2017/11/16-08:45:59.96243 [avtar]  CID flags.clientid:0
+2017-11-16 00:45:59 avtar Info <5612>: - - Reading CID '/usr/local/avamar/var/clidev-isilon2-2-vm-griffin-6173/cid.bin'
+2017-11-16 00:45:59 avtar Info <5614>: - - CID = 0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5 for "vm-griffin-6177.asl.lab.emc.com" (1502998702)
+2017/11/16-08:45:59.96252 [avtar]  read cid 0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5
+2017/11/16-08:45:59.96253 [avtar]  client::check_pluginid flags.pluginid:1001-Linux
+2017-11-16 00:45:59 avtar Info <5551>: Command Line: /usr/local/avamar/bin/avtar.bin --flagfile=/usr/local/avamar/etc/usersettings.cfg --password=**************** --server=vm-griffin-6177.asl.lab.emc.com --id=root --debug=true --x02=6144 --sysdir=/usr/local/avamar/etc/clidev-isilon2-2-vm-griffin-6173 --bindir=/usr/local/avamar/bin --vardir=/usr/local/avamar/var/clidev-isilon2-2-vm-griffin-6173 --ctlcallport=41737 --ctlinterface=1001-progress-MOD-1510821908238 --logtimeformat=default --logtimezone=default --logfile=/usr/local/avamar/var/clidev-isilon2-2-vm-griffin-6173/progress-MOD-1510821908238-1001-Unix_Progress.log
+2017-11-16 00:45:59 avtar Info <7977>: Starting at 2017-11-16 00:45:59 PST [avtar Jun 12 2017 11:47:51 7.5.100-183 Linux-x86_64]
+2017/11/16-08:45:59.96264 [avtar]  starting watchdog thread
+2017/11/16-08:45:59.96272 [watchdog]  Startup, pid=6072 tid=32 stack=0x7fb902441ccf td=0x7fb9027f9d00
+2017/11/16-08:45:59.96274 [watchdog]  watchdog thread: cancel_timer_secs=600, pollrate=10
+2017/11/16-08:45:59.96276 [avtar]  checking ctlinterface:'1001-progress-MOD-1510821908238'
+2017/11/16-08:45:59.96277 [avtar]  client trying to run in ctl_mode int:1001-progress-MOD-1510821908238 port:41737
+2017/11/16-08:45:59.96279 [avtar]  client.run_in_ctl_mode(127.0.0.1:41737) ctlcallport:41737 ctlinterface:1001-progress-MOD-1510821908238 xdrctl:0
+2017/11/16-08:45:59.98526 [avtar]  <1291> FIPS mode enabled
+2017/11/16-08:45:59.98602 [avtar]  sock::libinit(enc="tls", encrypt_strength="high", verify=0) socktype="sock_ssl"
+2017/11/16-08:45:59.98603 [avtar]  sockimpl::libinit(usessl=1, verify=0, encrypt_strength="high", pemdir="/usr/local/avamar/etc/clidev-isilon2-2-vm-griffin-6173")
+2017/11/16-08:45:59.98604 [avtar]  sslcontext::libinit
+2017/11/16-08:45:59.98614 [avtar]  sslcontext::libinit verifypeer=0, encrypt_strength="high", global_sslctx=0x7fb9027f3f98, global_sslctx->ctx=0x1747e50
+2017/11/16-08:45:59.99222 [avtar]  utar_ctl_sup::utar_ctl_sup constructor
+2017/11/16-08:45:59.99223 [avtar]  ctl_connection::handshake
+2017/11/16-08:45:59.99224 [avtar]  ctl_connection::handshake
+2017/11/16-08:45:59.99224 [avtar]  ctl_connection::startup_client client state:0x1749840
+2017/11/16-08:45:59.99225 [avtar]  tcpsock::createrawclient ipaddr:127.0.0.1:41737
+2017/11/16-08:45:59.99435 [avtar]  sockaddr_type::sockaddr_type Creating AF_INET6 socket failed with error: 'code 97: Address family not supported by protocol'. Setting family to IPv4.
+2017/11/16-08:45:59.99440 [avtar]  sockimpl::initclient connect timeout = 0 ipaddr:127.0.0.1:41737 netbind:, modified_netbind:
+2017/11/16-08:45:59.99466 [avtar]  ctl_connection::lowsend:
+send:<greeting pid="avtar" max_message_size="268435456" msgver="2" pidnum="1001" key="1001-progress-MOD-1510821908238" msgver2="3" version="7.5.100-183" mid="6069/6069/32" last_ctl_man_key="1001-progress-MOD-1510821908238" wid="" processid="6069" />
+
+2017/11/16-08:45:59.99517 [avtar]  ctl_connection::lowdata:
+recv:<greeting pid="avtar" ack="true" max_message_size="268435456" msgver="2" pidnum="1001" key="1001-progress-MOD-1510821908238" msgverres="3" msgver2="3" version="7.5.100-183" mid="6069/6069/32" last_ctl_man_key="1001-progress-MOD-1510821908238" wid="" processid="6069" />
+
+2017-11-16 00:45:59 avtar Info <10684>: Setting ctl message version to 3 (from 1)
+2017/11/16-08:45:59.99520 [avtar]  ctl_connection::set_mess_maxsize using default maxsize for version 3
+2017-11-16 00:45:59 avtar Info <16136>: Setting ctl max message size to 268435456
+2017/11/16-08:45:59.99542 [ctl_connection_recv]  Startup, pid=6078 tid=33 stack=0x7fb901c40ccf td=0x7fb9027f9b40
+2017/11/16-08:45:59.99549 [ctl_connection_send]  Startup, pid=6080 tid=34 stack=0x7fb90143fccf td=0x7fb90280a010
+2017-11-16 00:45:59 avtar Info <6767>: Successfully connected to 127.0.0.1:41737
+2017/11/16-08:45:59.99744 [avtar]  client.run_in_ctl_mode starting up sup
+2017/11/16-08:45:59.99736 [ctl_conn_recv-]  ctl_connection::lowdata:
+recv:<start_progress_avtar mid="3844/3859/67">
+  <snapup pid="Unix Progress" time="1510821928" did="on-demand" ack="false" type="work" msgver="5" pidnum="1001" work="backup" ticket="&lt;session-ticket  ticket-ordinal=&quot;10&quot; id=&quot;9151082190823909&quot; dpn-id=&quot;1502998702&quot; client-id=&quot;0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5&quot; user-id=&quot;backuponly&quot; passwd=&quot;*&quot; path=&quot;/yizhou/clidev-isilon2-2-vm-griffin-6173&quot; permissions=&quot;read,backup,readdir&quot; overtime=&quot;false&quot; valid-time-start=&quot;1510814708&quot; valid-time-end=&quot;1511426708&quot; /&gt;" key="1001-progress-MOD-1510821908238" sync="bg" sessionid="fcb61f8d8796518122f97e197909be6ec6898a47" cid="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5" gsansid="9151082190823909" last_ctl_man_key="1001-progress-MOD-1510821908238" mid="3844/3859/65" wid="progress-MOD-1510821908238" customaction="">
+    <directives>
+      <flag type="string" value="tls" name="encrypt" />
+      <flag type="string" value="high" name="encrypt-strength" />
+      <flag type="string" value="1516005933" name="expire" />
+      <flag type="string" value="none" name="retention-type" />
+      <flag type="string" value="vm-griffin-6177.asl.lab.emc.com" name="hfsaddr" />
+      <flag type="string" value="27000" name="hfsport" />
+      <flag type="password" value="****" name="ddr-auth-token-key" />
+      <flag type="string" value="backuponly" name="id" />
+      <flag type="password" value="****" name="ap" />
+      <flag type="string" value="/yizhou/clidev-isilon2-2-vm-griffin-6173" name="path" />
+    </directives>
+    <catalog>
+      <flag type="pulldown" value="default" name="[avtar]ddr-encrypt-strength" />
+      <flag type="checkbox" value="true" name="ddr" />
+      <flag type="pulldown" value="1" name="ddr-index" />
+      <flag type="pulldown" pidnum="14003" value="4" name="max-streams" />
+      <flag type="pulldown" pidnum="14003" value="try-incremental" name="mode" />
+    </catalog>
+    <browse-from-catalog>
+      <flag type="password" pidnum="14003" value="****" name="filerbrowsepswd" />
+      <flag type="string" pidnum="14003" value="root" name="filerbrowseuser" />
+    </browse-from-catalog>
+    <free-form />
+    <agent_directives>
+      <flag type="string" pidnum="1001" value="true" name="fakeprogress" />
+      <flag type="string" value="Isilon Filer" name="pidname" />
+      <flag type="string" value="14003" name="pidnum" />
+      <flag type="string" value="MOD-1510821908238" name="widimage" />
+      <flag type="string" value="9151082190823909" name="sessionid" />
+    </agent_directives>
+    <targetlist>
+      <path backup="true" name="/ifs/100MB_br/">
+        <dir name="100MB_br" size="915" selectable="true" fstype="container" />
+      </path>
+    </targetlist>
+  </snapup>
+</start_progress_avtar>
+
+2017/11/16-08:45:59.99780 [ctl_conn_recv-]  ctl_connection::lowdata:
+recv:<workorder_status pid="Isilon Filer" ack="false" startUTC="2017-11-16 08:45:52" pidnum="14003" work="" cid="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5" cumlative_duration="00:00:07" last_ctl_man_key="14003-MOD-1510821908238" mid="5961/5981/34" wid="MOD-1510821908238">
+  <sessionprogress keepalive="false" time="1510821959" estimatedbytes="0" filename="_2Fifs_2F100MB_5Fbr/testfile" paused="0" server_name="vm-griffin-6177.asl.lab.emc.com" files="0" modfilebytes="0" cputime="0" modfiles="0" bytes="2048" timestamp="2017-11-16 08:45:59" elapsed="3" mid="5961/5981/33" vmsize="0">
+    <dataprocessed percentnew="0.0000" percentinfcache="0.0000" percentinhcache="0.0000" percentispresent="0.0000" percentreduced="0.0000" kbytes="0" />
+    <datasent percentdir="0.00" percentatomic="0.00" percentctrl="0.00" percentcomposite="0.00" kbytes="0" />
+  </sessionprogress>
+</workorder_status>
+
+2017/11/16-08:45:59.99783 [utar_ctl_sup]  Startup, pid=6081 tid=35 stack=0x7fb900c3eccf td=0x7fb902815bb8
+2017/11/16-08:45:59.99784 [utar_ctl_sup]  utar_ctl_sup::body() started
+2017/11/16-08:45:59.99786 [utar_ctl_sup]  utar_ctl_sup::process_start_progress_avtar
+2017/11/16-08:45:59.99860 [utar_ctl_sup]  utar_ctl_sup::parse_snapup_message workorder: -------------
+<snapup pid="Unix Progress" time="1510821928" did="on-demand" ack="false" type="work" msgver="5" pidnum="1001" work="backup" ticket="&lt;session-ticket  ticket-ordinal=&quot;10&quot; id=&quot;9151082190823909&quot; dpn-id=&quot;1502998702&quot; client-id=&quot;0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5&quot; user-id=&quot;backuponly&quot; passwd=&quot;*&quot; path=&quot;/yizhou/clidev-isilon2-2-vm-griffin-6173&quot; permissions=&quot;read,backup,readdir&quot; overtime=&quot;false&quot; valid-time-start=&quot;1510814708&quot; valid-time-end=&quot;1511426708&quot; /&gt;" key="1001-progress-MOD-1510821908238" sync="bg" sessionid="fcb61f8d8796518122f97e197909be6ec6898a47" cid="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5" gsansid="9151082190823909" last_ctl_man_key="1001-progress-MOD-1510821908238" mid="3844/3859/65" wid="progress-MOD-1510821908238" customaction="">
+  <directives>
+    <flag type="string" value="tls" name="encrypt" />
+    <flag type="string" value="high" name="encrypt-strength" />
+    <flag type="string" value="1516005933" name="expire" />
+    <flag type="string" value="none" name="retention-type" />
+    <flag type="string" value="vm-griffin-6177.asl.lab.emc.com" name="hfsaddr" />
+    <flag type="string" value="27000" name="hfsport" />
+    <flag type="password" value="****" name="ddr-auth-token-key" />
+    <flag type="string" value="backuponly" name="id" />
+    <flag type="password" value="****" name="ap" />
+    <flag type="string" value="/yizhou/clidev-isilon2-2-vm-griffin-6173" name="path" />
+  </directives>
+  <catalog>
+    <flag type="pulldown" value="default" name="[avtar]ddr-encrypt-strength" />
+    <flag type="checkbox" value="true" name="ddr" />
+    <flag type="pulldown" value="1" name="ddr-index" />
+    <flag type="pulldown" pidnum="14003" value="4" name="max-streams" />
+    <flag type="pulldown" pidnum="14003" value="try-incremental" name="mode" />
+  </catalog>
+  <browse-from-catalog>
+    <flag type="password" pidnum="14003" value="****" name="filerbrowsepswd" />
+    <flag type="string" pidnum="14003" value="root" name="filerbrowseuser" />
+  </browse-from-catalog>
+  <free-form />
+  <agent_directives>
+    <flag type="string" pidnum="1001" value="true" name="fakeprogress" />
+    <flag type="string" value="Isilon Filer" name="pidname" />
+    <flag type="string" value="14003" name="pidnum" />
+    <flag type="string" value="MOD-1510821908238" name="widimage" />
+    <flag type="string" value="9151082190823909" name="sessionid" />
+  </agent_directives>
+  <targetlist>
+    <path backup="true" name="/ifs/100MB_br/">
+      <dir name="100MB_br" size="915" selectable="true" fstype="container" />
+    </path>
+  </targetlist>
+</snapup>
+
+-------------
+2017/11/16-08:45:59.99864 [utar_ctl_sup]  utar_ctl_sup::parse_snapup_message processing workorder
+2017/11/16-08:45:59.99871 [utar_ctl_sup]  workorder::parsexmlflags 'workorder directives'
+2017/11/16-08:45:59.99944 [utar_ctl_sup]  workorder::parsexmlflags 'workorder catalog'
+2017/11/16-08:45:59.99950 [utar_ctl_sup]  workorder::parsexmlflags 'workorder free-form'
+2017/11/16-08:45:59.99951 [utar_ctl_sup]  workorder::parsexmlflags 'workorder agent directives'
+2017/11/16-08:45:59.99961 [utar_ctl_sup]  utar_ctl_sup::parse_snapup_message processing workorder done
+2017-11-16 00:46:00 avtar Info <5900>: Workorder received:
+<snapup pid="Unix Progress" time="1510821928" did="on-demand" ack="false" type="work" msgver="5" pidnum="1001" work="backup" ticket="&lt;session-ticket  ticket-ordinal=&quot;10&quot; id=&quot;9151082190823909&quot; dpn-id=&quot;1502998702&quot; client-id=&quot;0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5&quot; user-id=&quot;backuponly&quot; passwd=&quot;*&quot; path=&quot;/yizhou/clidev-isilon2-2-vm-griffin-6173&quot; permissions=&quot;read,backup,readdir&quot; overtime=&quot;false&quot; valid-time-start=&quot;1510814708&quot; valid-time-end=&quot;1511426708&quot; /&gt;" key="1001-progress-MOD-1510821908238" sync="bg" sessionid="fcb61f8d8796518122f97e197909be6ec6898a47" cid="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5" gsansid="9151082190823909" last_ctl_man_key="1001-progress-MOD-1510821908238" mid="3844/3859/65" wid="progress-MOD-1510821908238" customaction="">
+  <directives>
+    <flag type="string" value="tls" name="encrypt" />
+    <flag type="string" value="high" name="encrypt-strength" />
+    <flag type="string" value="1516005933" name="expire" />
+    <flag type="string" value="none" name="retention-type" />
+    <flag type="string" value="vm-griffin-6177.asl.lab.emc.com" name="hfsaddr" />
+    <flag type="string" value="27000" name="hfsport" />
+    <flag type="password" value="****" name="ddr-auth-token-key" />
+    <flag type="string" value="backuponly" name="id" />
+    <flag type="password" value="****" name="ap" />
+    <flag type="string" value="/yizhou/clidev-isilon2-2-vm-griffin-6173" name="path" />
+  </directives>
+  <catalog>
+    <flag type="pulldown" value="default" name="[avtar]ddr-encrypt-strength" />
+    <flag type="checkbox" value="true" name="ddr" />
+    <flag type="pulldown" value="1" name="ddr-index" />
+    <flag type="pulldown" pidnum="14003" value="4" name="max-streams" />
+    <flag type="pulldown" pidnum="14003" value="try-incremental" name="mode" />
+  </catalog>
+  <browse-from-catalog>
+    <flag type="password" pidnum="14003" value="****" name="filerbrowsepswd" />
+    <flag type="string" pidnum="14003" value="root" name="filerbrowseuser" />
+  </browse-from-catalog>
+  <free-form />
+  <agent_directives>
+    <flag type="string" pidnum="1001" value="true" name="fakeprogress" />
+    <flag type="string" value="Isilon Filer" name="pidname" />
+    <flag type="string" value="14003" name="pidnum" />
+    <flag type="string" value="MOD-1510821908238" name="widimage" />
+    <flag type="string" value="9151082190823909" name="sessionid" />
+  </agent_directives>
+  <targetlist>
+    <path backup="true" name="/ifs/100MB_br/">
+      <dir name="100MB_br" size="915" selectable="true" fstype="container" />
+    </path>
+  </targetlist>
+</snapup>
+
+2017/11/16-08:46:00.00079 [utar_ctl_sup]  utar_ctl_sup::parse_snapup_message ok
+2017/11/16-08:46:00.00153 [avtar]  client.run_in_ctl_mode after start, before wait
+2017/11/16-08:46:00.00202 [utar_ctl_sup]  utar_ctl_sup::signal_main(1)1
+2017/11/16-08:46:00.00212 [utar_ctl_sup]  ctl_manbase::process_message() done
+2017/11/16-08:46:00.00216 [utar_ctl_sup]  utar_ctl_sup::process_workorder_status
+2017/11/16-08:46:00.00217 [utar_ctl_sup]  ctl_manbase::process_message() done
+2017/11/16-08:46:00.00218 [avtar]  utar_ctl_sup::should_i_do_anything back from wait (1)
+2017/11/16-08:46:00.00219 [avtar]  client.run_in_ctl_mode after wait xcontinue:1
+2017/11/16-08:46:00.00219 [avtar]  Looking for flag file "/usr/local/avamar/var/clidev-isilon2-2-vm-griffin-6173/avtar.cmd"
+2017-11-16 00:46:00 avtar Info <5174>: - Reading /usr/local/avamar/var/clidev-isilon2-2-vm-griffin-6173/avtar.cmd
+2017/11/16-08:46:00.00228 [avtar]  uflags::parsefile  Printing flags from /usr/local/avamar/var/clidev-isilon2-2-vm-griffin-6173/avtar.cmd:
+.cmd flag [1]: --debug=true
+.cmd flag [2]: --x02=6144
+
+2017-11-16 00:46:00 avtar Info <41294>: - When using the filename cache for a DDR backend, the paging cache is enabled by default and can't be disabled.
+2017-11-16 00:46:00 avtar Info <6640>: Running in progress mode
+2017/11/16-08:46:00.00233 [avtar]  client::RunEx: fakeprogress 1, create 1
+2017/11/16-08:46:00.00234 [avtar]  client::RunEx progress avtar allowing conflicting flags cnt=2
+2017-11-16 00:46:00 avtar Info <5697>: - Suppressing external name service queries for uids and gids
+2017/11/16-08:46:00.00237 [avtar]  client flags.clientid:0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5, clientid:0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5
+2017/11/16-08:46:00.00238 [avtar]  client::RunEx: flags.sessionid:9151082190823909 clientid:0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5
+2017/11/16-08:46:00.00239 [avtar]  Debug: xflag[2] = 6144 (0x1800)
+2017/11/16-08:46:00.00241 [avtar]  nbackmain::initBackup()- sizeof(DIRELEM)=160 (200), sizeof(cycle)=144, sizeof(nbackfile)=480
+2017/11/16-08:46:00.00243 [avtar]  include::inspect_args: pushing arg '/ifs/100MB_br'
+2017-11-16 00:46:00 avtar Info <5946>: File system character encoding is UTF-8.
+2017-11-16 00:46:00 avtar Info <8940>: Starting back up at 2017-11-16 00:46:00 PST as "root" on "vm-griffin-6173" (1 CPUs) [7.5.100-183]
+2017/11/16-08:46:00.00252 [avtar]  nbackmain: warn_on_missing_target flag set to: false
+2017/11/16-08:46:00.00255 [avtar]  Disabling ADE Chunker because this is a FILE SYSTEM DDR backup using ddr-filesystem
+2017/11/16-08:46:00.00255 [avtar]  snaptype:0, permissions=1, ignoreacls=0, ignorerwxmappng=0
+2017-11-16 00:46:00 avtar Info <5731>: Not using include/exclude list
+2017/11/16-08:46:00.00257 [avtar]  nbackmain::nbackmain root is '/ifs/100MB_br'
+2017/11/16-08:46:00.00258 [avtar]  nbackmain root_path:'/ifs/100MB_br' size:2
+2017/11/16-08:46:00.00259 [avtar]  lstat returns error for /ifs/100MB_br
+2017/11/16-08:46:00.00261 [avtar]  nbackmain host = vm-griffin-6173, root = /ifs/100MB_br, numdirs = 0, numfiles = 0, numbytes = 0
+2017/11/16-08:46:00.00261 [avtar]  nbackmain   Account Version: 2
+2017-11-16 00:46:00 avtar Info <17856>: EngageADE disabling ADEChunker, create:1 streamformat_out:0 extract:0 pluginid:1001-Unix Progress replicate:0
+2017/11/16-08:46:00.00264 [avtar]  context::engageAde setting adechunker to 0
+2017-11-16 00:46:00 avtar Info <8474>: - Log file path: /usr/local/avamar/var/clidev-isilon2-2-vm-griffin-6173/progress-MOD-1510821908238-1001-Unix_Progress.log
+2017/11/16-08:46:00.00270 [avtar]  SessionProfile::SessionProfile - profileStatusRate[dpn1] = -1
+2017/11/16-08:46:00.00271 [avtar]  SessionProfile -- server update=30, status rate[0]=900, baseMB=105
+2017/11/16-08:46:00.00271 [avtar]  SessionProfile -- server update=30, status rate[i]=off, baseMB=105
+2017-11-16 00:46:00 avtar Info <6555>: Initializing connection
+2017/11/16-08:46:00.00273 [avtar]  ADEMgr::sendFlagsToADE Calling ADE init with flags.
+2017/11/16-08:46:00.00274 [avtar]  ContextADE::ContextADE() complete (time=1510821960).
+2017/11/16-08:46:00.00277 [avtar]  ADEMgrX::startupADE Catalog Supported, but no --catalog-address specified
+2017/11/16-08:46:00.00278 [avtar]  ADEMgr::startupADE Starting ADE.
+2017/11/16-08:46:00.00278 [avtar]  ContextADE::initGComMgr(dpn0)
+2017/11/16-08:46:00.00282 [avtar]  sock::libinit(enc="tls", encrypt_strength="high", verify=0) socktype="sock_ssl"
+2017/11/16-08:46:00.00283 [avtar]  sockimpl::libinit(usessl=1, verify=0, encrypt_strength="high", pemdir="/usr/local/avamar/etc/clidev-isilon2-2-vm-griffin-6173")
+2017/11/16-08:46:00.00284 [avtar]  sslcontext::libinit
+2017/11/16-08:46:00.00284 [avtar]  sslcontext::libinit exiting since global_sslctx=0x7fb9027f3f98
+2017-11-16 00:46:00 avtar Info <5552>: Connecting to Avamar Server (vm-griffin-6177.asl.lab.emc.com)
+2017-11-16 00:46:00 avtar Info <5554>: Connecting to one node in each datacenter
+2017/11/16-08:46:00.00288 [avtar]  dpnconnect::create((none), 0, -1)
+2017/11/16-08:46:00.00289 [avtar]  dpnconnect::create hfsaddr=vm-griffin-6177.asl.lab.emc.com
+2017/11/16-08:46:00.00290 [avtar]  tabfilename = /usr/local/avamar/var/clidev-isilon2-2-vm-griffin-6173/vm-griffin-6177.asl.lab.emc.com-27000.dtb
+2017/11/16-08:46:00.00293 [avtar]  sysfile::open open64 failed: code 2: No such file or directory
+2017/11/16-08:46:00.00293 [avtar]  filedisk::doopen, fdesc == -1 after open attempt
+2017/11/16-08:46:00.00303 [avtar]  tcpsock::createclient ipaddr:10.25.106.177:29000
+2017-11-16 00:46:00 avtar Info <6578>: - - Requesting address from 10.25.106.177:29000
+2017/11/16-08:46:00.00318 [avtar]  sockimpl::initclient connect timeout = 0 ipaddr:10.25.106.177:29000 netbind:, modified_netbind:
+2017/11/16-08:46:00.00333 [avtar]  sslsockimpl::open  initclient success
+2017/11/16-08:46:00.00337 [avtar]  certlock::certlock system_unix lockdir=/tmp/.tmp_avamar/._usr_local_avamar_etc_clidev-isilon2-2-vm-griffin-6173
+2017/11/16-08:46:00.00338 [avtar]  certlock::create_certlock_dir unable to chmod old .tmp directory '/usr/local/avamar/etc/clidev-isilon2-2-vm-griffin-6173/.tmp' to 0775
+2017/11/16-08:46:00.00344 [avtar]  certlock::~certlock() success to remove SSL cert lock '/tmp/.tmp_avamar/._usr_local_avamar_etc_clidev-isilon2-2-vm-griffin-6173'
+2017/11/16-08:46:00.02608 [avtar]  sslsockimpl::open  initclient success, cipher: AES256-SHA
+2017/11/16-08:46:00.02640 [avtar]  dpnconnect::getserveraddr trying 10.25.106.177:29000
+2017/11/16-08:46:00.02641 [avtar]  dpnconnect::getserveraddr keyaddr=10.25.106.177:29000
+2017/11/16-08:46:00.02690 [avtar]  dpnconnect::getserveraddr received newaddr=10.25.106.177:29000 srcaddr=10.25.106.177:29000
+2017-11-16 00:46:00 avtar Info <6526>: - - Connect: Using 10.25.106.177:29000
+2017-11-16 00:46:00 avtar Info <5993>: - Connect: Connected to 10.25.106.177:29000, Priv=0, SSL Cipher=AES256-SHA
+2017/11/16-08:46:00.02816 [avtar]  dpnconnect::getdpninfo: servtime=1510821936.9800 clienttime=1510821960.0281 catserver=0 compressed=1 dpmmaxmessage=478
+2017/11/16-08:46:00.02818 [avtar]  dpnconnect::getdpninfo serverversion=7.5.0-183 hfscreatetime=1502998702 maxmessagedatasize=65412 maxatomchunksize=65382 maxcompchunksize=32691
+2017-11-16 00:46:00 avtar Info <5564>: - - Requesting dispatcher table and create time
+2017-11-16 00:46:00 avtar Info <5566>: - - Table: 8 nodebits, 10 bytes, create time: 1502998702
+2017/11/16-08:46:00.02851 [avtar]  checkrightdpn: olddc=0 newdc=1 numnodes=1 oldcreatetime=1502998702 newcreatetime=1502998702
+2017-11-16 00:46:00 avtar Info <5724>: - - Not writing dispatcher table for single node server
+2017/11/16-08:46:00.02854 [avtar]  should_request_connections: Not using connection load balancing
+2017/11/16-08:46:00.02861 [avtar]  dpnconnect::create((none), 0, 0)
+2017-11-16 00:46:00 avtar Info <5562>: - - Datacenter 0: Trying 10.25.106.177:29000
+2017/11/16-08:46:00.02864 [avtar]  tcpsock::createclient ipaddr:10.25.106.177:29000
+2017/11/16-08:46:00.02873 [avtar]  sockimpl::initclient connect timeout = 0 ipaddr:10.25.106.177:29000 netbind:, modified_netbind:
+2017/11/16-08:46:00.02881 [avtar]  sslsockimpl::open  initclient success
+2017/11/16-08:46:00.02883 [avtar]  certlock::certlock system_unix lockdir=/tmp/.tmp_avamar/._usr_local_avamar_etc_clidev-isilon2-2-vm-griffin-6173
+2017/11/16-08:46:00.02884 [avtar]  certlock::create_certlock_dir unable to chmod old .tmp directory '/usr/local/avamar/etc/clidev-isilon2-2-vm-griffin-6173/.tmp' to 0775
+2017/11/16-08:46:00.02888 [avtar]  certlock::~certlock() success to remove SSL cert lock '/tmp/.tmp_avamar/._usr_local_avamar_etc_clidev-isilon2-2-vm-griffin-6173'
+2017/11/16-08:46:00.04622 [avtar]  sslsockimpl::open  initclient success, cipher: AES256-SHA
+2017-11-16 00:46:00 avtar Info <5993>: - Datacenter 0 has 1 nodes: Connected to 10.25.106.177:29000, Priv=0, SSL Cipher=AES256-SHA
+2017/11/16-08:46:00.04780 [avtar]  dpnconnect::getdpninfo: servtime=1510821937.0000 clienttime=1510821960.0477 catserver=0 compressed=1 dpmmaxmessage=478
+2017/11/16-08:46:00.04786 [avtar]  dpnconnect::getdpninfo serverversion=7.5.0-183 hfscreatetime=1502998702 maxmessagedatasize=65412 maxatomchunksize=65382 maxcompchunksize=32691
+2017-11-16 00:46:00 avtar Info <5564>: - - Requesting dispatcher table and create time
+2017-11-16 00:46:00 avtar Info <5566>: - - Table: 8 nodebits, 10 bytes, create time: 1502998702
+2017/11/16-08:46:00.04841 [avtar]  checkrightdpn: olddc=1 newdc=1 numnodes=1 oldcreatetime=1502998702 newcreatetime=1502998702
+2017-11-16 00:46:00 avtar Info <5724>: - - Not writing dispatcher table for single node server
+2017/11/16-08:46:00.04846 [avtar]  servercontext::connect() - dpninfo string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dpninfo serverversion="7.5.0-183" fullserverversion="7.5.0-183" servertime="1510821937.00" iscatserver="false" compressed="true" maxmessage="478" hfsport="27000" sslport="29000" verifypeer="no" fipsenable="true" ssldebug="false" ssloptions="SSL_OP_MICROSOFT_SESS_ID_BUG,SSL_OP_NETSCAPE_CHALLENGE_BUG,SSL_OP_LEGACY_SERVER_CONNECT,SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG,SSL_OP_MICROSOFT_BIG_SSLV3_BUFFER,SSL_OP_SSLEAY_080_CLIENT_DH_BUG,SSL_OP_TLS_D5_BUG,SSL_OP_TLS_BLOCK_PADDING_BUG,SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS,SSL_OP_SINGLE_DH_USE,SSL_OP_NO_SSLv2,SSL_OP_NO_SSLv3,SSL_OP_NO_TLSv1,SSL_OP_NO_TLSv1_1" sslciphers="legacy" systemcreatetime="1502998702" maxmessagedatasize="65412" maxatomchunksize="65382" maxcompchunksize="32691" ipv6enabled="true">
+  <activityaccessmodes adminuser="mhpu+0hpu+0hpu" checkpoint="mhpu+0hpu+0hpu" conversion="mhpu+0hpu+0hpu" diskbeat="mhpu+0hpu+0hpu" garbagecollect="mhpu+0hpu+0hpu" heartbeat="mhpu+0hpu+0hpu" hfscheckserver="mhpu+0hpu+0hpu" hfscheckexecute="mhpu+0hpu+0hpu" nodebeat="mhpu+0hpu+0hpu" runlevel="mhpu+0hpu+0hpu" testintegrity="mhpu+0hpu+0hpu" removehashes="mhpu+0hpu+0hpu" rebuildstripe="mhpu+0hpu+0hpu" diskfull="mhpu+0hpu+0hpu" hashrefcheck="mhpu+0hpu+0hpu"/>
+</dpninfo>
+2017/11/16-08:46:00.04852 [avtar]  dpnconnect::checkserveractivities: Activityaccessmode simage - <activityaccessmodes garbagecollect="mhpu+0hpu+0hpu" checkpoint="mhpu+0hpu+0hpu" hashrefcheck="mhpu+0hpu+0hpu" hfscheckserver="mhpu+0hpu+0hpu" adminuser="mhpu+0hpu+0hpu" heartbeat="mhpu+0hpu+0hpu" conversion="mhpu+0hpu+0hpu" diskfull="mhpu+0hpu+0hpu" diskbeat="mhpu+0hpu+0hpu" hfscheckexecute="mhpu+0hpu+0hpu" removehashes="mhpu+0hpu+0hpu" runlevel="mhpu+0hpu+0hpu" nodebeat="mhpu+0hpu+0hpu" testintegrity="mhpu+0hpu+0hpu" rebuildstripe="mhpu+0hpu+0hpu" />
+
+2017/11/16-08:46:00.04856 [avtar]  dpnconnect::checkserveractivities: Set ActivityAccessModes: adminuser=mhpu+0hpu+0hpu.
+2017/11/16-08:46:00.04861 [avtar]  dpnconnect::checkserveractivities: Set ActivityAccessModes: checkpoint=mhpu+0hpu+0hpu.
+2017/11/16-08:46:00.04866 [avtar]  dpnconnect::checkserveractivities: Set ActivityAccessModes: conversion=mhpu+0hpu+0hpu.
+2017/11/16-08:46:00.04871 [avtar]  dpnconnect::checkserveractivities: Set ActivityAccessModes: diskbeat=mhpu+0hpu+0hpu.
+2017/11/16-08:46:00.04876 [avtar]  dpnconnect::checkserveractivities: Set ActivityAccessModes: garbagecollect=mhpu+0hpu+0hpu.
+2017/11/16-08:46:00.04881 [avtar]  dpnconnect::checkserveractivities: Set ActivityAccessModes: heartbeat=mhpu+0hpu+0hpu.
+2017/11/16-08:46:00.04886 [avtar]  dpnconnect::checkserveractivities: Set ActivityAccessModes: hfscheckserver=mhpu+0hpu+0hpu.
+2017/11/16-08:46:00.04891 [avtar]  dpnconnect::checkserveractivities: Set ActivityAccessModes: hfscheckexecute=mhpu+0hpu+0hpu.
+2017/11/16-08:46:00.04895 [avtar]  dpnconnect::checkserveractivities: Set ActivityAccessModes: nodebeat=mhpu+0hpu+0hpu.
+2017/11/16-08:46:00.04898 [avtar]  dpnconnect::checkserveractivities: Set ActivityAccessModes: runlevel=mhpu+0hpu+0hpu.
+2017/11/16-08:46:00.04901 [avtar]  dpnconnect::checkserveractivities: Set ActivityAccessModes: testintegrity=mhpu+0hpu+0hpu.
+2017/11/16-08:46:00.04906 [avtar]  dpnconnect::checkserveractivities: Set ActivityAccessModes: removehashes=mhpu+0hpu+0hpu.
+2017/11/16-08:46:00.04909 [avtar]  dpnconnect::checkserveractivities: Set ActivityAccessModes: rebuildstripe=mhpu+0hpu+0hpu.
+2017/11/16-08:46:00.04912 [avtar]  dpnconnect::checkserveractivities: Set ActivityAccessModes: diskfull=mhpu+0hpu+0hpu.
+2017/11/16-08:46:00.04914 [avtar]  dpnconnect::checkserveractivities: Set ActivityAccessModes: hashrefcheck=mhpu+0hpu+0hpu.
+2017/11/16-08:46:00.04915 [avtar]  servercontext: dpn=0, ms.size=1, cs.hfscreatetime=1502998702
+2017/11/16-08:46:00.04915 [avtar]  servercontext: dpn=0, compression=1, maxatomchunksize=65382, maxcompchunksize=32691
+2017/11/16-08:46:00.04916 [avtar]  GComMgr::init: maxpending=40, maxmaxpending=120, min_maxpending=10, parallelstreams=1
+2017/11/16-08:46:00.04918 [avtar]  receivers::connect starting new receive thread owner=0x7fb902815578 connref=targetaddr=10.25.106.177:29000 targetnodeid=(none) connid=nodeid=(none) id=0 available=1 tcp servaddr=10.25.106.177:29000 fd=8 bufsize=60000 isclosed=0
+2017/11/16-08:46:00.04922 [ms[0]recv]  Startup, pid=6082 tid=36 stack=0x7fb90003cccf td=0x7fb9028159f8
+2017/11/16-08:46:00.04924 [ms[0]recv]  msgrecv::body start
+2017/11/16-08:46:00.04928 [send]  Startup, pid=6083 tid=37 stack=0x7fb8ff83bccf td=0x7fb90281bae8
+2017/11/16-08:46:00.04929 [send]  hashsend::body++
+2017/11/16-08:46:00.04933 [ade-async]  Startup, pid=6084 tid=38 stack=0x7fb8ff03accf td=0x7fb90004e870
+2017/11/16-08:46:00.04937 [retry]  Startup, pid=6085 tid=39 stack=0x7fb8fe839ccf td=0x7fb90004ea30
+2017/11/16-08:46:00.04939 [avtar]  startGComMgr: Disabling GComMgr throttling
+2017/11/16-08:46:00.04939 [avtar]  ContextADE::loginToServer(dpn=0)
+2017/11/16-08:46:00.04940 [avtar]  GComMgr::loginToServer(dpn=0)
+2017/11/16-08:46:00.04940 [avtar]  Parsing account parameters
+2017/11/16-08:46:00.04945 [avtar]  session ticket from plugin interface ticket:<session-ticket  ticket-ordinal="10" id="9151082190823909" dpn-id="1502998702" client-id="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5" user-id="backuponly" passwd="*" path="/yizhou/clidev-isilon2-2-vm-griffin-6173" permissions="read,backup,readdir" overtime="false" valid-time-start="1510814708" valid-time-end="1511426708" /> hash:fcb61f8d8796518122f97e197909be6ec6898a47
+2017/11/16-08:46:00.04948 [avtar]  client_config_flags::read_ticket id overwritten by flags
+2017/11/16-08:46:00.04949 [avtar]  client_config_flags::read_ticket sessionidxxx:9151082190823909
+2017-11-16 00:46:00 avtar Info <5581>: Logging in on connection 0 with Session Ticket
+2017-11-16 00:46:00 avtar Info <5582>: Avamar Server login successful
+2017-11-16 00:46:00 avtar Info <5018>: - Session ID: 9151082190823909
+2017/11/16-08:46:00.04991 [avtar]  servercontext::getdcindexmap getting index datacenter map for alldc
+2017/11/16-08:46:00.05022 [avtar]  servercontext::getdcindexmap got index datacenter map dcbits=1 tablesize=2 matchbits=1 matchlen=2
+2017/11/16-08:46:00.05023 [avtar]  GComMgr::get_cid_from_accountpath
+2017/11/16-08:46:00.05099 [avtar]  CID='0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5' using block 'start: 048520e900a4dce3b46aa572bf6ae2a20dc18c5a  path: /yizhou/clidev-isilon2-2-vm-griffin-6173  curlevel: 0' result = 1
+2017-11-16 00:46:00 avtar Info <10632>: Using Client-ID='0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5'
+2017/11/16-08:46:00.05106 [avtar]  GComMgr::get_cid_from_accountpath returns 0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5
+2017/11/16-08:46:00.05109 [avtar]  ADEMgr::startupADE() -- ADE is up, connected, and logged into server
+2017/11/16-08:46:00.05117 [avtar]  New adeMgr=0x7fb902816b78
+2017/11/16-08:46:00.05124 [hsrv0]  Startup, pid=6086 tid=40 stack=0x7fb8fe038ccf td=0x7fb90004efc8
+2017/11/16-08:46:00.05128 [avtar]  sizeof(univbool)=1, sizeof(char)=1, sizeof(int)=4, sizeof(long)=8, sizeof(long long)=8, sizeof(double)=8, sizeof(void*)=8, sizeof(size_t)=8, byteorder=ABCD
+2017/11/16-08:46:00.05130 [avtar]  sizeof(context)=33824, sizeof(msg)=152, sizeof(DIRELEM)=160, sizeof(mtex)=40, sizeof(safeint)=4, sizeof(countptr)=16
+2017/11/16-08:46:00.05133 [avtar]  sizeof(univbool)=1, sizeof(univint16)=2, sizeof(univuns16)=2, sizeof(univuns24)=3, sizeof(univint)=4, sizeof(univuns)=4
+2017/11/16-08:46:00.05134 [avtar]  sizeof(univuns40)=5, sizeof(univuns48)=6, sizeof(univuns56)=7, sizeof(univint64)=8, sizeof(univdbl)=8
+2017/11/16-08:46:00.05136 [avtar]  sizeof(cycle)=144, sizeof(backchunk)=192, sizeof(nbackdir)=464, sizeof(nbackfile)=480, sizeof(backstate)=1048, sizeof(workelem)=248, sizeof(backstats)=9136
+2017/11/16-08:46:00.05137 [avtar]  nbackmain::send_secondary_session_ticket fakeprogress=1
+2017/11/16-08:46:00.05148 [avtar]  nbackmain::send_secondary_session_ticket doing ctl enqueque 3
+2017/11/16-08:46:00.05148 [avtar]  hfs_info.clientid 0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5
+2017-11-16 00:46:00 avtar Info <5550>: Successfully logged into Avamar Server [7.5.0-183] (Compression enabled)
+2017-11-16 00:46:00 avtar Info <7563>: Back up of "/ifs/100MB_br" on server "vm-griffin-6177.asl.lab.emc.com" for /yizhou/clidev-isilon2-2-vm-griffin-6173
+2017/11/16-08:46:00.05153 [avtar]  nbackmain::runBackup: Original root string for session message is "/ifs/100MB_br"
+2017/11/16-08:46:00.05175 [avtar]  Linux version: 2.6.32-0.  Per-process CPU time=1
+2017/11/16-08:46:00.05176 [avtar]  context::loop: Nothing pending on server, only internal work (pending all=1, ext=0, int=0)
+2017/11/16-08:46:00.05188 [ctl_conn_send-]  ctl_connection::lowsend:
+send:<secondary_session_ticket pid="Unix Progress" pidnum="1001" key="1001-progress-MOD-1510821908238" cid="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5" mid="6069/6069/33" last_ctl_man_key="1001-progress-MOD-1510821908238" wid="progress-MOD-1510821908238" />
+
+2017-11-16 00:46:00 avtar Info <5771>: Client side cache files are turned off
+2017/11/16-08:46:00.05259 [avtar]  setting label from  to progress-MOD-1510821908238
+2017/11/16-08:46:00.05260 [avtar]  Chunker settings: compress=1, clevel=1, cpercent=75, threshold=44000, minchunksize=2000
+2017/11/16-08:46:00.05261 [avtar]  nbackmain stats_data_only
+2017/11/16-08:46:00.05275 [avtar]  nbackmain::stats_data_only kind:BEGIN mess:
+<sessionprogress keepalive="false" estimatedbytes="0" time="1510821959" paused="0" filename="_2Fifs_2F100MB_5Fbr/testfile" server_name="vm-griffin-6177.asl.lab.emc.com" files="0" modfilebytes="0" cputime="0" modfiles="0" bytes="2048" timestamp="2017-11-16 08:45:59" mid="5961/5981/33" elapsed="3" vmsize="0">
+  <dataprocessed percentnew="0.0000" percentinhcache="0.0000" percentinfcache="0.0000" percentispresent="0.0000" percentreduced="0.0000" kbytes="0" />
+  <datasent percentdir="0.00" percentatomic="0.00" percentctrl="0.00" percentcomposite="0.00" kbytes="0" />
+  <build msgversion="13-10" time="11:47:51" appname="avtar" zlibversion="1.2.3" lzoversion="1.08 Jul 12 2002" date="Jun 12 2017" appversion="7.5.100-183" processortype="x86_64" osversion="SLES-64" sslversion="TLSv1   OpenSSL 1.0.2a-fips 19 Mar 2015" osname="Linux" />
+  <session numthreads="1" type="avtarbackup" ndispatchers="1" expires="1516005933" domain="" workorderid="MOD-1510821908238" pidnum="1001" numconns="1" path="/yizhou/clidev-isilon2-2-vm-griffin-6173" starttime="1510821960" encrypt="tls" dispatcher0="10.25.106.177:29000" sessionid="9151082190823909" root="/ifs/100MB_br" pluginid="Unix Progress" encrypt-strength="high" clientid="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5" user="">
+    <host numprocs="1" speed="200" osuser="root" name="vm-griffin-6173" memory="934" />
+    <build msgversion="13-10" time="11:47:51" appname="avtar" zlibversion="1.2.3" lzoversion="1.08 Jul 12 2002" date="Jun 12 2017" appversion="7.5.100-183" processortype="x86_64" osversion="SLES-64" sslversion="TLSv1   OpenSSL 1.0.2a-fips 19 Mar 2015" osname="Linux" />
+    <dirstats numbytes="0" numfiles="0" numdirs="0" />
+  </session>
+</sessionprogress>
+
+2017/11/16-08:46:00.05281 [avtar]  SessionProfile::sendstats kind: BEGIN  mess1:
+<sessionprogress keepalive="false" estimatedbytes="0" time="1510821959" paused="0" filename="_2Fifs_2F100MB_5Fbr/testfile" server_name="vm-griffin-6177.asl.lab.emc.com" files="0" modfilebytes="0" cputime="0" modfiles="0" bytes="2048" timestamp="2017-11-16 08:45:59" mid="5961/5981/33" elapsed="3" vmsize="0">
+  <dataprocessed percentnew="0.0000" percentinhcache="0.0000" percentinfcache="0.0000" percentispresent="0.0000" percentreduced="0.0000" kbytes="0" />
+  <datasent percentdir="0.00" percentatomic="0.00" percentctrl="0.00" percentcomposite="0.00" kbytes="0" />
+  <build msgversion="13-10" time="11:47:51" appname="avtar" zlibversion="1.2.3" lzoversion="1.08 Jul 12 2002" date="Jun 12 2017" appversion="7.5.100-183" processortype="x86_64" osversion="SLES-64" sslversion="TLSv1   OpenSSL 1.0.2a-fips 19 Mar 2015" osname="Linux" />
+  <session numthreads="1" type="avtarbackup" ndispatchers="1" expires="1516005933" domain="" workorderid="MOD-1510821908238" pidnum="1001" numconns="1" path="/yizhou/clidev-isilon2-2-vm-griffin-6173" starttime="1510821960" encrypt="tls" dispatcher0="10.25.106.177:29000" sessionid="9151082190823909" root="/ifs/100MB_br" pluginid="Unix Progress" encrypt-strength="high" clientid="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5" user="">
+    <host numprocs="1" speed="200" osuser="root" name="vm-griffin-6173" memory="934" />
+    <build msgversion="13-10" time="11:47:51" appname="avtar" zlibversion="1.2.3" lzoversion="1.08 Jul 12 2002" date="Jun 12 2017" appversion="7.5.100-183" processortype="x86_64" osversion="SLES-64" sslversion="TLSv1   OpenSSL 1.0.2a-fips 19 Mar 2015" osname="Linux" />
+    <dirstats numbytes="0" numfiles="0" numdirs="0" />
+  </session>
+</sessionprogress>
+
+2017/11/16-08:46:00.05297 [avtar]  SERVLOG: dpninx=0 ack=0 <BEGIN pid="Isilon Filer" pidnum="14003" report="true" sessionid="9151082190823909" cid="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5" wid="MOD-1510821908238">   <sessionprogress keepalive="false" estimatedbytes="0" time="1510821959" paused="0" filename="_2Fifs_2F100MB_5Fbr/testfile" server_name="vm-griffin-6177.asl.lab.emc.com" files="0" modfilebytes="0" cputime="0" modfiles="0" bytes="2048" timestamp="2017-11-16 08:45:59" mid="5961/5981/33" elapsed="3" vmsize="0">     <dataprocessed percentnew="0.0000" percentinhcache="0.0000" percentinfcache="0.0000" percentispresent="0.0000" percentreduced="0.0000" kbytes="0" />     <datasent percentdir="0.00" percentatomic="0.00" percentctrl="0.00" percentcomposite="0.00" kbytes="0" />     <build msgversion="13-10" time="11:47:51" appname="avtar" zlibversion="1.2.3" lzoversion="1.08 Jul 12 2002" date="Jun 12 2017" appversion="7.5.100-183" processortype="x86_64" osversion="SLES-64" sslversion="TLSv1   OpenSSL 1.0.2a-fips 19 Mar 2015" osname="Linux" />     <session numthreads="1" type="avtarbackup" ndispatchers="1" expires="1516005933" domain="" workorderid="MOD-1510821908238" pidnum="1001" numconns="1" path="/yizhou/clidev-isilon2-2-vm-griffin-6173" starttime="1510821960" encrypt="tls" dispatcher0="10.25.106.177:29000" sessionid="9151082190823909" root="/ifs/100MB_br" pluginid="Unix Progress" encrypt-strength="high" clientid="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5" user="">       <host numprocs="1" speed="200" osuser="root" name="vm-griffin-6173" memory="934" />       <build msgversion="13-10" time="11:47:51" appname="avtar" zlibversion="1.2.3" lzoversion="1.08 Jul 12 2002" date="Jun 12 2017" appversion="7.5.100-183" processortype="x86_64" osversion="SLES-64" sslversion="TLSv1   OpenSSL 1.0.2a-fips 19 Mar 2015" osname="Linux" />       <dirstats numbytes="0" numfiles="0" numdirs="0" />     </session>   </sessionprogress> </BEGIN> 
+---------------------------------
+2017/11/16-08:46:11.95202 [ctl_conn_recv-]  ctl_connection::lowdata:
+recv:<workorder_status pid="Isilon Filer" ack="false" startUTC="2017-11-16 08:45:52" pidnum="14003" work="" cid="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5" cumlative_duration="00:00:19" last_ctl_man_key="14003-MOD-1510821908238" mid="5961/5981/36" wid="MOD-1510821908238">
+  <sessionprogress keepalive="false" time="1510821971" estimatedbytes="0" filename="_2Fifs_2F100MB_5Fbr/testfile" paused="0" server_name="vm-griffin-6177.asl.lab.emc.com" files="110" modfilebytes="555944316" cputime="0" modfiles="1" bytes="555946972" timestamp="2017-11-16 08:46:11" elapsed="15" mid="5961/5981/35" vmsize="0">
+    <dataprocessed percentnew="0.0003" percentinfcache="0.0000" percentinhcache="99.9994" percentispresent="0.0000" percentreduced="0.0003" kbytes="542916" />
+    <datasent percentdir="0.00" percentatomic="0.00" percentctrl="0.00" percentcomposite="0.00" kbytes="0" />
+  </sessionprogress>
+</workorder_status>
+
+2017/11/16-08:46:11.95210 [utar_ctl_sup]  utar_ctl_sup::process_workorder_status
+2017/11/16-08:46:11.95211 [utar_ctl_sup]  ctl_manbase::process_message() done
+2017/11/16-08:46:11.95215 [avtar]  nbackmain::stats_data_only kind:PROGRESS mess:
+<sessionprogress keepalive="false" estimatedbytes="0" time="1510821971" paused="0" filename="_2Fifs_2F100MB_5Fbr/testfile" server_name="vm-griffin-6177.asl.lab.emc.com" files="110" modfilebytes="555944316" cputime="0" modfiles="1" bytes="555946972" timestamp="2017-11-16 08:46:11" mid="5961/5981/35" elapsed="15" vmsize="0">
+  <dataprocessed percentnew="0.0003" percentinhcache="99.9994" percentinfcache="0.0000" percentispresent="0.0000" percentreduced="0.0003" kbytes="542916" />
+  <datasent percentdir="0.00" percentatomic="0.00" percentctrl="0.00" percentcomposite="0.00" kbytes="0" />
+</sessionprogress>
+
+2017/11/16-08:46:11.95217 [avtar]  SessionProfile::sendstats kind: PROGRESS  mess1:
+<sessionprogress keepalive="false" estimatedbytes="0" time="1510821971" paused="0" filename="_2Fifs_2F100MB_5Fbr/testfile" server_name="vm-griffin-6177.asl.lab.emc.com" files="110" modfilebytes="555944316" cputime="0" modfiles="1" bytes="555946972" timestamp="2017-11-16 08:46:11" mid="5961/5981/35" elapsed="15" vmsize="0">
+  <dataprocessed percentnew="0.0003" percentinhcache="99.9994" percentinfcache="0.0000" percentispresent="0.0000" percentreduced="0.0003" kbytes="542916" />
+  <datasent percentdir="0.00" percentatomic="0.00" percentctrl="0.00" percentcomposite="0.00" kbytes="0" />
+</sessionprogress>
+
+2017/11/16-08:46:11.95229 [avtar]  SERVLOG: dpninx=0 ack=0 <PROGRESS pid="Isilon Filer" pidnum="14003" report="true" sessionid="9151082190823909" cid="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5" wid="MOD-1510821908238">   <sessionprogress keepalive="false" estimatedbytes="0" time="1510821971" paused="0" filename="_2Fifs_2F100MB_5Fbr/testfile" server_name="vm-griffin-6177.asl.lab.emc.com" files="110" modfilebytes="555944316" cputime="0" modfiles="1" bytes="555946972" timestamp="2017-11-16 08:46:11" mid="5961/5981/35" elapsed="15" vmsize="0">     <dataprocessed percentnew="0.0003" percentinhcache="99.9994" percentinfcache="0.0000" percentispresent="0.0000" percentreduced="0.0003" kbytes="542916" />     <datasent percentdir="0.00" percentatomic="0.00" percentctrl="0.00" percentcomposite="0.00" kbytes="0" />   </sessionprogress> </PROGRESS> 
+---------------------------------
+2017/11/16-08:46:15.12913 [ctl_conn_recv-]  ctl_connection::lowdata:
+recv:<workorder_status pid="Isilon Filer" ack="false" startUTC="2017-11-16 08:45:52" pidnum="14003" work="" cid="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5" cumlative_duration="00:00:23" last_ctl_man_key="14003-MOD-1510821908238" mid="5961/5981/38" wid="MOD-1510821908238">
+  <sessionprogress keepalive="false" time="1510821975" estimatedbytes="0" paused="0" server_name="vm-griffin-6177.asl.lab.emc.com" files="110" modfilebytes="1111887228" cputime="0" modfiles="1" bytes="1111888897" timestamp="2017-11-16 08:46:15" elapsed="17" mid="5961/5981/37" vmsize="0">
+    <dataprocessed percentnew="0.0002" percentinfcache="0.0000" percentinhcache="49.9998" percentispresent="49.9999" percentreduced="0.0002" kbytes="1085829" />
+    <datasent percentdir="0.00" percentatomic="0.00" percentctrl="0.00" percentcomposite="0.00" kbytes="0" />
+  </sessionprogress>
+</workorder_status>
+
+2017/11/16-08:46:15.12919 [utar_ctl_sup]  utar_ctl_sup::process_workorder_status
+2017/11/16-08:46:15.12920 [utar_ctl_sup]  ctl_manbase::process_message() done
+2017/11/16-08:46:15.12925 [avtar]  nbackmain::stats_data_only kind:PROGRESS mess:
+<sessionprogress keepalive="false" estimatedbytes="0" time="1510821975" paused="0" server_name="vm-griffin-6177.asl.lab.emc.com" files="110" modfilebytes="1111887228" cputime="0" modfiles="1" bytes="1111888897" timestamp="2017-11-16 08:46:15" mid="5961/5981/37" elapsed="17" vmsize="0">
+  <dataprocessed percentnew="0.0002" percentinhcache="49.9998" percentinfcache="0.0000" percentispresent="49.9999" percentreduced="0.0002" kbytes="1085829" />
+  <datasent percentdir="0.00" percentatomic="0.00" percentctrl="0.00" percentcomposite="0.00" kbytes="0" />
+</sessionprogress>
+
+2017/11/16-08:46:15.12929 [avtar]  SessionProfile::sendstats kind: PROGRESS  mess1:
+<sessionprogress keepalive="false" estimatedbytes="0" time="1510821975" paused="0" server_name="vm-griffin-6177.asl.lab.emc.com" files="110" modfilebytes="1111887228" cputime="0" modfiles="1" bytes="1111888897" timestamp="2017-11-16 08:46:15" mid="5961/5981/37" elapsed="17" vmsize="0">
+  <dataprocessed percentnew="0.0002" percentinhcache="49.9998" percentinfcache="0.0000" percentispresent="49.9999" percentreduced="0.0002" kbytes="1085829" />
+  <datasent percentdir="0.00" percentatomic="0.00" percentctrl="0.00" percentcomposite="0.00" kbytes="0" />
+</sessionprogress>
+
+2017/11/16-08:46:15.12941 [avtar]  SERVLOG: dpninx=0 ack=0 <PROGRESS pid="Isilon Filer" pidnum="14003" report="true" sessionid="9151082190823909" cid="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5" wid="MOD-1510821908238">   <sessionprogress keepalive="false" estimatedbytes="0" time="1510821975" paused="0" server_name="vm-griffin-6177.asl.lab.emc.com" files="110" modfilebytes="1111887228" cputime="0" modfiles="1" bytes="1111888897" timestamp="2017-11-16 08:46:15" mid="5961/5981/37" elapsed="17" vmsize="0">     <dataprocessed percentnew="0.0002" percentinhcache="49.9998" percentinfcache="0.0000" percentispresent="49.9999" percentreduced="0.0002" kbytes="1085829" />     <datasent percentdir="0.00" percentatomic="0.00" percentctrl="0.00" percentcomposite="0.00" kbytes="0" />   </sessionprogress> </PROGRESS> 
+---------------------------------
+2017/11/16-08:46:15.16349 [ctl_conn_recv-]  ctl_connection::lowdata:
+recv:<status_wrapup_summary pid="Isilon Filer" exitcode="20" numbytes="0" startUTC="2017-11-16 08:46:11" pidnum="14003" newbytes="0" finishUTC="2017-11-16 08:46:15" errorcode="0" key="14003-MOD-1510821908238" cid="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5" mid="5961/5981/39" last_ctl_man_key="14003-MOD-1510821908238" wid="MOD-1510821908238">
+  <SUMMARY totalprotectedbytes="555946972" filebytes_ddsent="1313" filecount_excluded="0" dirbytes_sent="4193" filebytes_sent="628" compbytes_ispresent="0" filebytes_ispresent="0" dirbytes_hashcache="0" filebytes_skipped="0" totalprimarybytes="555942876" compbytes_sent="0" dirbytes_ispresent="0" chunkcount_sent="1" chunkcount_hashcache="0" filebytes_hardlink="0" dircount_sent="2" filebytes_noreason="0" filebytes_reduced="1420" filecount_hardlink="0" filecount_noreason="0" filecount_filecache="109" filebytes_ddpresent="0" filecount_skipped="0" compcount_hashcache="0" dircount_hashcache="0" snapview_stat="false" filebytes_filecache="555942876" compcount_sent="0" dircount_ispresent="0" chunkcount_ispresent="0" elapsed="15" compbytes_hashcache="0" filebytes_hashcache="0" filecount_reduced="1" compcount_ispresent="0" totalfilebytes="555946972" totalfilecount="110" filebytes_excluded="0">
+    <session numthreads="1" type="avtarbackup" expires="1516005933" ndispatchers="1" domain="" workorderid="MOD-1510821908238" numconns="1" pidnum="14003" label="MOD-1510821908238" path="/yizhou/clidev-isilon2-2-vm-griffin-6173" encrypt="tls" starttime="1510821974" labelnum="7" dispatcher0="10.25.106.177:29000" sessionid="9151082190823909" root="/" pluginid="Isilon Filer" encrypt-strength="high" user="" clientid="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5">
+      <host numprocs="1" speed="200" osuser="root" name="vm-griffin-6173" memory="934" />
+      <build msgversion="13-10" time="11:47:51" appname="avtar" zlibversion="1.2.3" lzoversion="1.08 Jul 12 2002" date="Jun 12 2017" appversion="7.5.100-183" processortype="x86_64" osversion="SLES-64" sslversion="TLSv1   OpenSSL 1.0.2a-fips 19 Mar 2015" osname="Linux" />
+      <dirstats />
+    </session>
+    <errorsummary exitcode="0" errors="0" warnings="0" fatals="0" />
+  </SUMMARY>
+</status_wrapup_summary>
+
+2017/11/16-08:46:15.16355 [utar_ctl_sup]  ctl_manbase::process_message() done
+2017/11/16-08:46:15.16365 [avtar]  nbackmain::stats_data_only kind:END mess:
+<SUMMARY filecount_excluded="0" filebytes_ddsent="1313" totalprotectedbytes="555946972" dirbytes_sent="4193" dirbytes_hashcache="0" filebytes_ispresent="0" compbytes_ispresent="0" filebytes_sent="628" filebytes_skipped="0" totalprimarybytes="555942876" dirbytes_ispresent="0" compbytes_sent="0" filebytes_hardlink="0" chunkcount_hashcache="0" chunkcount_sent="1" dircount_sent="2" filebytes_noreason="0" filecount_hardlink="0" filebytes_reduced="1420" filecount_noreason="0" filecount_filecache="109" filebytes_ddpresent="0" filecount_skipped="0" dircount_hashcache="0" compcount_hashcache="0" filebytes_filecache="555942876" snapview_stat="false" compcount_sent="0" dircount_ispresent="0" chunkcount_ispresent="0" filecount_reduced="1" filebytes_hashcache="0" compbytes_hashcache="0" elapsed="15" compcount_ispresent="0" totalfilecount="110" totalfilebytes="555946972" filebytes_excluded="0">
+  <session numthreads="1" type="avtarbackup" ndispatchers="1" expires="1516005933" domain="" workorderid="MOD-1510821908238" pidnum="14003" numconns="1" label="MOD-1510821908238" path="/yizhou/clidev-isilon2-2-vm-griffin-6173" labelnum="7" starttime="1510821974" encrypt="tls" dispatcher0="10.25.106.177:29000" sessionid="9151082190823909" root="/" pluginid="Isilon Filer" encrypt-strength="high" clientid="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5" user="">
+    <host numprocs="1" speed="200" osuser="root" name="vm-griffin-6173" memory="934" />
+    <build time="11:47:51" msgversion="13-10" appname="avtar" zlibversion="1.2.3" lzoversion="1.08 Jul 12 2002" date="Jun 12 2017" appversion="7.5.100-183" processortype="x86_64" osversion="SLES-64" osname="Linux" sslversion="TLSv1   OpenSSL 1.0.2a-fips 19 Mar 2015" />
+    <dirstats />
+  </session>
+  <errorsummary exitcode="0" errors="0" warnings="0" fatals="0" />
+  <sessionprogress keepalive="false" estimatedbytes="0" time="1510821975" paused="0" server_name="vm-griffin-6177.asl.lab.emc.com" files="110" modfilebytes="1111887228" cputime="0" modfiles="1" bytes="1111888897" timestamp="2017-11-16 08:46:15" mid="5961/5981/37" elapsed="17" vmsize="0">
+    <dataprocessed percentnew="0.0002" percentinhcache="49.9998" percentinfcache="0.0000" percentispresent="49.9999" percentreduced="0.0002" kbytes="1085829" />
+    <datasent percentdir="0.00" percentatomic="0.00" percentctrl="0.00" percentcomposite="0.00" kbytes="0" />
+  </sessionprogress>
+</SUMMARY>
+
+2017/11/16-08:46:15.16372 [avtar]  SessionProfile::sendstats kind: END  mess1:
+<SUMMARY filecount_excluded="0" filebytes_ddsent="1313" totalprotectedbytes="555946972" dirbytes_sent="4193" dirbytes_hashcache="0" filebytes_ispresent="0" compbytes_ispresent="0" filebytes_sent="628" filebytes_skipped="0" totalprimarybytes="555942876" dirbytes_ispresent="0" compbytes_sent="0" filebytes_hardlink="0" chunkcount_hashcache="0" chunkcount_sent="1" dircount_sent="2" filebytes_noreason="0" filecount_hardlink="0" filebytes_reduced="1420" filecount_noreason="0" filecount_filecache="109" filebytes_ddpresent="0" filecount_skipped="0" dircount_hashcache="0" compcount_hashcache="0" filebytes_filecache="555942876" snapview_stat="false" compcount_sent="0" dircount_ispresent="0" chunkcount_ispresent="0" filecount_reduced="1" filebytes_hashcache="0" compbytes_hashcache="0" elapsed="15" compcount_ispresent="0" totalfilecount="110" totalfilebytes="555946972" filebytes_excluded="0">
+  <session numthreads="1" type="avtarbackup" ndispatchers="1" expires="1516005933" domain="" workorderid="MOD-1510821908238" pidnum="14003" numconns="1" label="MOD-1510821908238" path="/yizhou/clidev-isilon2-2-vm-griffin-6173" labelnum="7" starttime="1510821974" encrypt="tls" dispatcher0="10.25.106.177:29000" sessionid="9151082190823909" root="/" pluginid="Isilon Filer" encrypt-strength="high" clientid="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5" user="">
+    <host numprocs="1" speed="200" osuser="root" name="vm-griffin-6173" memory="934" />
+    <build time="11:47:51" msgversion="13-10" appname="avtar" zlibversion="1.2.3" lzoversion="1.08 Jul 12 2002" date="Jun 12 2017" appversion="7.5.100-183" processortype="x86_64" osversion="SLES-64" osname="Linux" sslversion="TLSv1   OpenSSL 1.0.2a-fips 19 Mar 2015" />
+    <dirstats />
+  </session>
+  <errorsummary exitcode="0" errors="0" warnings="0" fatals="0" />
+  <sessionprogress keepalive="false" estimatedbytes="0" time="1510821975" paused="0" server_name="vm-griffin-6177.asl.lab.emc.com" files="110" modfilebytes="1111887228" cputime="0" modfiles="1" bytes="1111888897" timestamp="2017-11-16 08:46:15" mid="5961/5981/37" elapsed="17" vmsize="0">
+    <dataprocessed percentnew="0.0002" percentinhcache="49.9998" percentinfcache="0.0000" percentispresent="49.9999" percentreduced="0.0002" kbytes="1085829" />
+    <datasent percentdir="0.00" percentatomic="0.00" percentctrl="0.00" percentcomposite="0.00" kbytes="0" />
+  </sessionprogress>
+</SUMMARY>
+
+2017/11/16-08:46:15.16382 [avtar]  ADEMgr::getDDRLoginInfo -- cannot return ddrLoginArgs because ddrComMgr is not initialized.
+2017/11/16-08:46:15.16383 [avtar]  SessionProfile::set_ddr_attributes DDR host name is not available for index=1.
+2017/11/16-08:46:15.16391 [avtar]  SERVLOG: dpninx=0 ack=0 <END pid="Isilon Filer" pidnum="14003" report="true" ddrindex="1" sessionid="9151082190823909" cid="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5" wid="MOD-1510821908238">   <SUMMARY filecount_excluded="0" filebytes_ddsent="1313" totalprotectedbytes="555946972" dirbytes_sent="4193" dirbytes_hashcache="0" filebytes_ispresent="0" compbytes_ispresent="0" filebytes_sent="628" filebytes_skipped="0" totalprimarybytes="555942876" dirbytes_ispresent="0" compbytes_sent="0" filebytes_hardlink="0" chunkcount_hashcache="0" chunkcount_sent="1" dircount_sent="2" filebytes_noreason="0" filecount_hardlink="0" filebytes_reduced="1420" filecount_noreason="0" filecount_filecache="109" filebytes_ddpresent="0" filecount_skipped="0" dircount_hashcache="0" compcount_hashcache="0" filebytes_filecache="555942876" snapview_stat="false" compcount_sent="0" dircount_ispresent="0" chunkcount_ispresent="0" filecount_reduced="1" filebytes_hashcache="0" compbytes_hashcache="0" elapsed="15" compcount_ispresent="0" totalfilecount="110" totalfilebytes="555946972" filebytes_excluded="0">     <session numthreads="1" type="avtarbackup" ndispatchers="1" expires="1516005933" domain="" workorderid="MOD-1510821908238" pidnum="14003" numconns="1" label="MOD-1510821908238" path="/yizhou/clidev-isilon2-2-vm-griffin-6173" labelnum="7" starttime="1510821974" encrypt="tls" dispatcher0="10.25.106.177:29000" sessionid="9151082190823909" root="/" pluginid="Isilon Filer" encrypt-strength="high" clientid="0a4fc2dcc3ff974d81f16ce9c595fa5162d0d1b5" user="">       <host numprocs="1" speed="200" osuser="root" name="vm-griffin-6173" memory="934" />       <build time="11:47:51" msgversion="13-10" appname="avtar" zlibversion="1.2.3" lzoversion="1.08 Jul 12 2002" date="Jun 12 2017" appversion="7.5.100-183" processortype="x86_64" osversion="SLES-64" osname="Linux" sslversion="TLSv1   OpenSSL 1.0.2a-fips 19 Mar 2015" />       <dirstats />     </session>     <errorsummary exitcode="0" errors="0" warnings="0" fatals="0" />     <sessionprogress keepalive="false" estimatedbytes="0" time="1510821975" paused="0" server_name="vm-griffin-6177.asl.lab.emc.com" files="110" modfilebytes="1111887228" cputime="0" modfiles="1" bytes="1111888897" timestamp="2017-11-16 08:46:15" mid="5961/5981/37" elapsed="17" vmsize="0">       <dataprocessed percentnew="0.0002" percentinhcache="49.9998" percentinfcache="0.0000" percentispresent="49.9999" percentreduced="0.0002" kbytes="1085829" />       <datasent percentdir="0.00" percentatomic="0.00" percentctrl="0.00" percentcomposite="0.00" kbytes="0" />     </sessionprogress>   </SUMMARY> </END> 
+---------------------------------
+2017/11/16-08:46:15.16472 [ctl_conn_recv-]  ctl_connection::lowdata:
+recv:<cancel pid="Unix Progress" pidnum="1001" targetwid="progress-MOD-1510821908238" last_ctl_man_key="1001-progress-MOD-1510821908238" mid="3844/3859/68" wid="progress-MOD-1510821908238" />
+
+2017/11/16-08:46:15.16481 [utar_ctl_sup]  utar_ctl_sup::process_cancel workorder: -------------
+<cancel pid="Unix Progress" pidnum="1001" targetwid="progress-MOD-1510821908238" last_ctl_man_key="1001-progress-MOD-1510821908238" mid="3844/3859/68" wid="progress-MOD-1510821908238" />
+
+-------------
+2017-11-16 00:46:15 avtar Info <8758>: Canceled - exiting...
+2017-11-16 00:46:15 avtar Info <9772>: Starting graceful (staged) termination, MCS cancel (wrap-up stage)
+2017/11/16-08:46:15.16489 [utar_ctl_sup]  Starting graceful (staged) termination, run stage [stage:RSTAGE_WRAPUP/1 excode:EXIT_MCSCANCEL/169 skipwrap:f] (request by TID: 6081, reason: MCS cancel)
+2017/11/16-08:46:15.16489 [utar_ctl_sup]  uapp_staged::RunStageMultiple::startTermination: create exit timer thread
+2017/11/16-08:46:15.16494 [ExitTimer]  Startup, pid=6117 tid=41 stack=0x7fb8fd837ccf td=0x7fb90005b538
+2017/11/16-08:46:15.16495 [utar_ctl_sup]  utar_ctl_sup::process_cancel workorder [stage:RSTAGE_WRAPUP/1 excode:EXIT_MCSCANCEL/169 skipwrap:f]
+2017/11/16-08:46:15.16496 [utar_ctl_sup]  utar_ctl_sup::signal_main(1)1
+2017/11/16-08:46:15.16498 [utar_ctl_sup]  ctl_manbase::process_message() done
+2017/11/16-08:46:15.16499 [avtar]  nbackmain::stats_data_only terminated
+2017/11/16-08:46:15.16502 [avtar]  total time =   15.2 seconds
+2017/11/16-08:46:15.16502 [avtar]  total bytes/second = 0
+2017/11/16-08:46:15.16503 [avtar]  atomic bytes/second = 0
+2017-11-16 00:46:15 avtar Stats <6144>: total time = 15.2 seconds
+2017-11-16 00:46:15 avtar Stats <6146>: total bytes/second = 0
+2017-11-16 00:46:15 avtar Stats <6147>: atomic bytes/second = 0
+2017-11-16 00:46:15 avtar Info <8469>: Progress avtar, no wrapup.
+2017-11-16 00:46:15 avtar Info <5314>: Command completed (exit code 0: success)
+2017/11/16-08:46:15.16512 [avtar]  client::runex returns 0
+2017/11/16-08:46:15.16513 [avtar]  client::runex calling terminate on main sup
+2017/11/16-08:46:15.16518 [utar_ctl_sup]  utar_ctl_sup::body() exiting
+2017/11/16-08:46:15.16518 [utar_ctl_sup]  utar_ctl_sup::signal_main(0)1
+2017/11/16-08:46:15.16520 [utar_ctl_sup]  Thread finished utar_ctl_sup
+2017/11/16-08:46:15.16526 [ctl_conn_send-]  ctl_connection::lowsend:
+send:<shutdown_connection ack="true" mid="6069/6069/34" />
+
+2017/11/16-08:46:15.16529 [ctl_conn_send-]  Thread finished ctl_conn_send-
+2017/11/16-08:46:15.16544 [avtar]  client::~client
+2017/11/16-08:46:15.16546 [avtar]  context::~context
+2017/11/16-08:46:15.16546 [avtar]  context: about to check numthreads != -1
+2017/11/16-08:46:15.16546 [avtar]  context: numthreads == -1
+2017/11/16-08:46:15.16547 [avtar]  context: deleting todo_queue
+2017/11/16-08:46:15.16547 [avtar]  context: deleting todo_parallel_queue
+2017/11/16-08:46:15.16548 [avtar]  context: deleting pdumpcontext
+2017-11-16 00:46:15 avtar Stats <41300>: Final Restore Cache Stats Enabled=F Lookups=0, Enters=0, Hits=0 (of which, 0 were zero-blocks)
+2017/11/16-08:46:15.16550 [avtar]  context::~context has ctl_statep
+2017/11/16-08:46:15.16551 [avtar]  context: shutting down watchdog
+2017/11/16-08:46:15.16552 [watchdog]  watchdog thread terminating
+2017/11/16-08:46:15.16553 [watchdog]  Thread finished watchdog
+2017/11/16-08:46:15.16561 [avtar]  context: Done with deletes
+2017/11/16-08:46:15.16562 [avtar]  --context::~context
+2017/11/16-08:46:15.16606 [avtar]  utar_ctl_sup::signal_main(1)1
+2017/11/16-08:46:15.20335 [ctl_conn_recv-]  ctl_connection::lowdata:
+recv:<shutdown_connection ack="false" last_ctl_man_key="1001-progress-MOD-1510821908238" mid="6069/6069/34" />
+
+2017/11/16-08:46:15.20359 [ctl_conn_recv-]  Thread finished ctl_conn_recv-
+2017/11/16-08:46:15.20474 [avtar]  Debug output redirect end
+
+--------------------------------------------------------------------------------------------------------
+----- END avtar log 2017-11-16 00:46:15 PST  (0 warnings, 0 errors, 0 fatal errors)
+--------------------------------------------------------------------------------------------------------
+
